@@ -24,6 +24,9 @@ function MyApp({ Component, pageProps }) {
     if (timezone) {
       setTimezone(timezone);
     }
+    else{
+      setTimezone(moment.tz.guess());
+    }
     if (token) {
       axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
 
