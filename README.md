@@ -9,7 +9,7 @@ The site is deployed at: [https://lvtask.vercel.app/](https://lvtask.vercel.app/
 ### PS: The backend is deployed on Heroku as free eco plan, so it may take some time to load the data for the first time as well as sometime backend might be down.
 
 
-## Demo Video [https://github.com/wisdomrider/lv_task_frontend/blob/main/README.md](https://github.com/wisdomrider/lv_task_frontend/raw/main/1722156391079695.mp4)
+## Demo Video [Download from here](https://github.com/wisdomrider/lv_task_frontend/raw/main/1722156391079695.mp4)
 
 
 
