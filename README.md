@@ -1,4 +1,4 @@
-# Task Management Application
+# Event Management Application
 
 This is a event management application where users can create, update, delete and view events with an calendar view
 
