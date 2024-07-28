@@ -37,6 +37,7 @@ const EditEventModal = ({
   const [participant, setParticipant] = useState("");
   const toast = useToast();
   const queryClient = useQueryClient();
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (event) {
@@ -96,6 +97,7 @@ const EditEventModal = ({
 
     moment.tz.setDefault(currenTimezone);
 
+    setIsLoading(true);
     axios
       .put(`/events/${event.id}`, data)
       .then(() => {
@@ -105,6 +107,9 @@ const EditEventModal = ({
       })
       .catch(() => {
         toast({ title: "Failed to update event", status: "error" });
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -195,7 +200,7 @@ const EditEventModal = ({
           </FormControl>
         </ModalBody>
         <ModalFooter>
-          <Button colorScheme="blue" mr={3} type="submit">
+          <Button colorScheme="blue" mr={3} type="submit" isLoading={isLoading} disabled={isLoading}>
             Update Event
           </Button>
           <Button onClick={onClose}>Cancel</Button>
