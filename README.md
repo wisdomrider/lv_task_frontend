@@ -1,4 +1,4 @@
-# Task Management Application
+# Event Management Application
 
 This is a event management application where users can create, update, delete and view events with an calendar view
 
@@ -9,8 +9,7 @@ The site is deployed at: [https://lvtask.vercel.app/](https://lvtask.vercel.app/
 ### PS: The backend is deployed on Heroku as free eco plan, so it may take some time to load the data for the first time as well as sometime backend might be down.
 
 
-## Demo Video
-
+## Demo Video [View from here](https://drive.google.com/file/d/14LL7Dx5Ztz9dLnJsHmcgwmbLwcHtTFZm/view?usp=sharing)
 
 
 
