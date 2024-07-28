@@ -65,6 +65,21 @@ const EventDetailModal = ({ isOpen, onClose, event, timezone, onEdit }) => {
                 {startTime} - {endTime}
               </Text>
             </Flex>
+            <Flex justify="end">
+              {moment().isAfter(event.start) && (
+                <Text
+                  mt="2"
+                  bg="red.500"
+                  color="white"
+                  px="2"
+                  py="1"
+                  rounded="md"
+                  fontSize="xs"
+                >
+                  Started
+                </Text>
+              )}
+            </Flex>
             <Divider my="4" />
 
             <Text mt="4">
@@ -90,9 +105,11 @@ const EventDetailModal = ({ isOpen, onClose, event, timezone, onEdit }) => {
             ))}
           </ModalBody>
           <ModalFooter>
+            {/* if event is already started disable edit */}
             {!event.isHoliday && (
               <Flex gap="4">
                 <Button
+                  disabled={moment().isAfter(event.start)}
                   colorScheme="blue"
                   onClick={() => {
                     onEdit(event);
