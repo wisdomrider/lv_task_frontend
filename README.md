@@ -4,7 +4,7 @@ This is a event management application where users can create, update, delete an
 
 ## Live Site
 
-The site is deployed at: [https://lvtask.vercel.app/](https://lvtask.vercel.app/) 
+The site is deployed at: [https://lvtask.vercel.app/](https://lvtask.vercel.app/)  [x Down]
 
 ### PS: The backend is deployed on Heroku's free eco plan, so it may take some time to load the data for the first time, and the backend might occasionally be down. Due to time constraints, I used APScheduler instead of Celery, but Celery is also a good approach.
 
